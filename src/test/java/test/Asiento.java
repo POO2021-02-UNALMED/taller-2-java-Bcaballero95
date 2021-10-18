@@ -7,14 +7,11 @@ package test;
 
 
 class Asiento {
-    private String color;
-    private int precio;
-    private int registro;
+    String color;
+    int precio;
+    int registro;
 
-    public int getRegistro() {
-        return registro;
-    }
-    
+   
     
     
     public void cambiarColor(String color){
