@@ -7,13 +7,13 @@ package test;
 
 public class Auto {
 
-    private String modelo;
-    private int precio;
-    private Asiento[] asientos;
-    private String marca;
-    private Motor motor;
-    private int registro;
-    private int cantidadCreados;
+    String modelo;
+    int precio;
+    Asiento[] asientos;
+    String marca;
+    Motor motor;
+    int registro;
+    int cantidadCreados;
 
     public int cantidadAsientos() {
         int total = 0;
@@ -27,9 +27,9 @@ public class Auto {
 
     public String verificarIntegridad() {
         boolean ok = false;
-        if (motor.getRegistro() == this.registro) {
+        if (motor.registro == this.registro) {
             for (Asiento asiento : asientos) {
-                if (asiento.getRegistro() == this.registro) {
+                if (asiento.registro == this.registro) {
                     ok = true;
                 } else {
                     ok = false;
