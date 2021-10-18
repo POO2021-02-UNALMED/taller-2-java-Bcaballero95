@@ -29,9 +29,9 @@ public class Auto {
         boolean ok = false;
         if (motor.registro == this.registro) {
             for (Asiento asiento : asientos) {
-                if (asiento.registro == this.registro) {
+                if (asiento instanceof Asiento && asiento.registro == this.registro) {
                     ok = true;
-                } else {
+                } else if(asiento instanceof Asiento && asiento.registro != this.registro){
                     ok = false;
                     break;
                 }
