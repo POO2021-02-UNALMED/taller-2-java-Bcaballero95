@@ -2,14 +2,10 @@ package test;
 
 
 class Motor {
-    private int numeroCilindros;
-    private String tipo;
-    private int registro;
+    int numeroCilindros;
+    String tipo;
+    int registro;
 
-    public int getRegistro() {
-        return registro;
-    }
-    
     
     public void cambiarRegistro(int rg){
         this.registro = rg;
